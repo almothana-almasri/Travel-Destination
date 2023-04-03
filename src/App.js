@@ -1,14 +1,11 @@
-import Header from './components/header/Header';
-import Tours from './components/tours/Tours';
-import Footer from './components/footer/Footer';
 import './App.css';
+import Home from './components/home/Home';
+const toursData = require("./data/db.json");
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Tours />
-      <Footer />
+      <Home toursData={toursData} />
     </div>
   );
 }

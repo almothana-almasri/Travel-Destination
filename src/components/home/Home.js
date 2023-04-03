@@ -3,11 +3,11 @@ import Tours from '../tours/Tours';
 import Footer from '../footer/Footer';
 import './Home.css';
 
-function Home() {
+function Home(props) {
     return (
         <div>
             <Header />
-            <Tours />
+            <Tours toursData={props.toursData} />
             <Footer />
         </div>
     );
