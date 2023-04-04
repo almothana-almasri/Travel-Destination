@@ -1,7 +1,16 @@
+
 function Header() {
-    return (
-        <h1>Travel Destinations</h1>
-    );
+  return (
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;

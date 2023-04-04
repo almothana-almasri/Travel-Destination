@@ -3,14 +3,12 @@ import Tours from '../tours/Tours';
 import Footer from '../footer/Footer';
 import './Home.css';
 
-function Home(props) {
+function Home() {
     return (
-        <div>
-            <Header />
-            <Tours toursData={props.toursData} />
-            <Footer />
-        </div>
+      <div>
+        <Tours toursData={toursData} />
+      </div>
     );
-}
-
-export default Home;
+  }
+  
+  export default Home;

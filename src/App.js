@@ -4,9 +4,13 @@ const toursData = require("./data/db.json");
 
 function App() {
   return (
-    <div className="App">
-      <Home toursData={toursData} />
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/city/:id" render={(props) => <TourDetail {...props} toursData={toursData} />} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

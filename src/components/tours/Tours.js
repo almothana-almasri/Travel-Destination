@@ -1,17 +1,17 @@
 import './Tours.css';
 
+import Tour from './Tour';
+
 function Tours(props) {
-    return (
-        <div>
-            {props.toursData.map(tour => (
-                <div key={tour.id}>
-                    {/* i have added key={tour.id} because of the following error that appeared in tghe browser: Warning: Each child in a list should have a unique "key" prop. Check the render method of `Tours`. See https://reactjs.org/link/warning-keys for more information. */}
-                    <h2>{tour.name}</h2>
-                    <img src={tour.image} alt={tour.name} />
-                </div>
-            ))}
-        </div>
-    );
+  const { toursData } = props;
+
+  return (
+    <div className="tours">
+      {toursData.map(tour => (
+        <Tour key={tour.id} {...tour} />
+      ))}
+    </div>
+  );
 }
 
 export default Tours;
