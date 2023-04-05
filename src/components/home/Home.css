@@ -1,0 +1,74 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+.navbar {
+    text-align: center;
+    font-size: larger;
+}
+.navbar a {
+    color: #fff;
+}
+.navbar a:hover {
+    color: aqua;
+  }
+
+.tours-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tours-container>div {
+    width: 33.33%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.tours-container h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.tours-container h2:hover {
+    color: aqua;
+}
+
+.tours-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tours-container img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0 0 5px;
+  }
+  .footer p:first-child {
+    margin-top: 10%;
+  }
+  .footer li:last-child {
+    margin-bottom: 22%;
+  }
+  .footer ul li a{
+    color: #fff;
+  }
+  .footer ul li a:hover {
+    color: aqua;
+  }
