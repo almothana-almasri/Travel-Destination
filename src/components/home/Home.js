@@ -4,8 +4,10 @@ import Footer from '../footer/Footer';
 import './Home.css';
 
 function Home(props) {
+
     return (
-        <div>
+
+        <div className="home-container">
             <Header />
             <Tours toursData={props.toursData} />
             <Footer />

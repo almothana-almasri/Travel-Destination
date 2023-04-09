@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <div>
+        <div className="footer">
             <p>Author: Almothana Almasri</p>
             <p>Connect with me on social media:</p>
             <ul>
